@@ -12,7 +12,6 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 
 public abstract class BaseTest implements IAutoConst {
-	private static final String path = null;
 	public WebDriver driver;
 	static {
 		System.setProperty(CHROME_KEY, CHROME_VALUE);
