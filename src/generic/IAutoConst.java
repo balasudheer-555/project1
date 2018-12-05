@@ -13,7 +13,7 @@ public interface IAutoConst {
 	String REPORT_PATH = "./result/report.xlsx";
 	
 	long ITO = 10;
-	long ETO = 8;
+	long ETO = 10;
 	
 	
 

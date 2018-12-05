@@ -12,7 +12,7 @@ import page.LoginPage;
 
 public class ValidLogin extends BaseTest {
 	@Test(priority=1)
-	public void testValidLogin() {
+	public void testValidLogin() throws Exception {
 		String un = FWUtil.getXLData(XL_PATH, "ValidLogin", 1, 0);
 		String pw = FWUtil.getXLData(XL_PATH, "ValidLogin", 1, 1);
 		String title = FWUtil.getXLData(XL_PATH, "ValidLogin", 1, 2);
@@ -23,6 +23,7 @@ public class ValidLogin extends BaseTest {
 		l.setPassword(pw);
 		//click on login button
 		l.clickLogin();
+		Thread.sleep(3000);
 		//verify that home page is displayed or not
 		EnetrTimeTrackPage e = new EnetrTimeTrackPage(driver);
 		e.verifyHomePageIsDisplayed(driver, ETO, title);
