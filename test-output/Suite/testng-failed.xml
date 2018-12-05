@@ -11,6 +11,22 @@
           <include name="closeApp"/>
         </methods>
       </class> <!-- script.ValidLogin -->
+      <class name="script.CheckProductEdition">
+        <methods>
+          <include name="openApp"/>
+          <include name="testCheckProductEdition"/>
+          <include name="print"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.CheckProductEdition -->
+      <class name="script.InValidLogin">
+        <methods>
+          <include name="openApp"/>
+          <include name="testInValidLogin"/>
+          <include name="print"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.InValidLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
