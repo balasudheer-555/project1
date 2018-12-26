@@ -18,6 +18,12 @@ public class EnetrTimeTrackPage{
 	@FindBy(linkText="Licenses")
 	private WebElement licenses;
 	
+	@FindBy(linkText="Logo & Color Scheme")
+	private WebElement logoAndColor;
+	
+	@FindBy(xpath="(//div[@class='img'])[4]")
+	private WebElement userListIMG;
+	
 	public EnetrTimeTrackPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -27,6 +33,12 @@ public class EnetrTimeTrackPage{
 	}
 	public void clickLicenses() {
 		licenses.click();
+	}
+	public void clickLogoAndColor() {
+		logoAndColor.click();
+	}
+	public void clickUserListIMG() {
+		userListIMG.click();
 	}
 	
 	

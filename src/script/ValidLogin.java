@@ -16,8 +16,8 @@ public class ValidLogin extends BaseTest {
 		String un = FWUtil.getXLData(XL_PATH, "ValidLogin", 1, 0);
 		String pw = FWUtil.getXLData(XL_PATH, "ValidLogin", 1, 1);
 		String title = FWUtil.getXLData(XL_PATH, "ValidLogin", 1, 2);
-		LoginPage l = new LoginPage(driver);
 		//Enter valid username
+		LoginPage l = new LoginPage(driver);
 		l.setUserName(un);
 		//enter valid password
 		l.setPassword(pw);
